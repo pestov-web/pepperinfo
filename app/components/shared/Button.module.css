@@ -1,0 +1,23 @@
+.button {
+  cursor: pointer;
+  border-radius: 12px;
+  height: 40px;
+  width: fit-content;
+  padding: 0 20px;
+  border: none;
+  transition: all linear 0.2s;
+  color: var(--text-black);
+}
+.button_primary {
+  background: var(--button-primary);
+}
+.button_primary:hover {
+  background: var(--button-secondary);
+}
+
+.button_secondary {
+  background: var(--button-secondary);
+}
+.button_secondary:hover {
+  background: var(--button-primary);
+}

@@ -1,0 +1,21 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 16px;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+}
+.title {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.description {
+  font-size: 16px;
+  line-height: 1.2;
+}
