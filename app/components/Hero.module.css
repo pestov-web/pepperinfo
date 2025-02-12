@@ -8,14 +8,14 @@
   height: 308px;
   box-sizing: border-box;
 }
-.hero__content {
+.content {
   height: 100%;
 
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
-.hero__title {
+.title {
   font-size: 42px;
   line-height: 1.3;
   font-weight: 700;

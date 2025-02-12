@@ -5,6 +5,7 @@
   --button-secondary: #f5ede8;
   --border: #e5e8eb;
   --text-black: #1c120d;
+  --text-orange: #9c6e4a;
 }
 
 @media (prefers-color-scheme: dark) {

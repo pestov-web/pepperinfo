@@ -7,15 +7,18 @@
 .item {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+
   overflow: hidden;
 }
 .title {
   font-size: 16px;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 500;
+  padding: 12px 0 5px;
 }
 .description {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
+  font-weight: 400;
+  color: var(--text-orange);
 }

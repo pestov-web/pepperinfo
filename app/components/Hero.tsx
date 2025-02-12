@@ -5,8 +5,8 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <Image src={heroPic} alt="hero" width={455} height={276} />
-      <div className={styles.hero__content}>
-        <h1 className={styles.hero__title}>
+      <div className={styles.content}>
+        <h1 className={styles.title}>
           Ваш источник всего, что связано с острым перцем.
         </h1>
         <div>search</div>
