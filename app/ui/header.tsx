@@ -1,6 +1,6 @@
-import styles from './Header.module.css';
-import { navList } from '../lib/data-placeholder';
-import UserMenu from './UserMenu';
+import styles from './header.module.css';
+import { navList } from '@/app/lib/data-placeholder';
+import UserMenu from '@/app/ui/user-menu';
 import Link from 'next/link';
 
 const Header = () => {

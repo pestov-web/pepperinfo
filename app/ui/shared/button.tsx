@@ -1,5 +1,5 @@
 import { PropsWithChildren } from 'react';
-import styles from './Button.module.css';
+import styles from './button.module.css';
 import clsx from 'clsx';
 type Variant = 'primary' | 'secondary';
 type ButtonProps = PropsWithChildren<{

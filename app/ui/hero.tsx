@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import heroPic from '../../public/hero.webp';
-import styles from './Hero.module.css';
+import heroPic from '@/public/hero.webp';
+import styles from './hero.module.css';
 function Hero() {
   return (
     <section className={styles.hero}>

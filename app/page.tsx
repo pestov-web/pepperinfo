@@ -1,7 +1,7 @@
 import styles from './page.module.css';
-import Hero from './components/Hero';
+import Hero from '@/app/ui/hero';
 import { blogData, recipesData, databaseData } from './lib/data-placeholder';
-import CardList from './components/shared/CardList';
+import CardList from '@/app/ui/shared/card-list';
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 'use client';
-import Button from './shared/Button';
-import styles from './UserMenu.module.css';
+import Button from '@/app/ui/shared/button';
+import styles from './user-menu.module.css';
 function UserMenu() {
   return (
     <div className={styles.userMenu}>

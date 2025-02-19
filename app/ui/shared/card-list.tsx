@@ -1,6 +1,6 @@
 import { StaticImageData } from 'next/image';
 import Image from 'next/image';
-import styles from './CardList.module.css';
+import styles from './card-list.module.css';
 
 type CardsListProps = {
   id: number;
