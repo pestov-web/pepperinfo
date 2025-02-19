@@ -56,3 +56,7 @@ h2 {
     color-scheme: light !important;
   }
 }
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

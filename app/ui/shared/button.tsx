@@ -1,12 +1,14 @@
 import { PropsWithChildren } from 'react';
 import styles from './button.module.css';
 import clsx from 'clsx';
-type Variant = 'primary' | 'secondary';
-type ButtonProps = PropsWithChildren<{
-  variant: Variant;
-}>;
 
-function Button(props: ButtonProps) {
+type Variant = 'primary' | 'secondary';
+
+function Button(
+  props: PropsWithChildren<{
+    variant: Variant;
+  }>
+) {
   const { variant, children } = props;
   return (
     <button
