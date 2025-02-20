@@ -1,11 +1,12 @@
-'use client';
-import Button from '@/app/ui/shared/button';
+import Link from 'next/link';
+
 import styles from './user-menu.module.css';
 function UserMenu() {
   return (
     <div className={styles.userMenu}>
-      <Button variant="primary">Войти</Button>
-      <Button variant="secondary">Регистрация</Button>
+      <Link href="/login" className={styles.link} aria-label="Войти">
+        Войти
+      </Link>
     </div>
   );
 }

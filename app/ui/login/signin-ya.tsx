@@ -1,15 +1,25 @@
-'use client';
-import { signIn } from '@/auth';
+import { signIn, signOut } from '@/auth';
 
-export default function SignIn() {
+export default function SignInYa() {
   return (
-    <form
-      action={async () => {
-        'use server';
-        await signIn('yandex');
-      }}
-    >
-      <button type="submit">Signin with Yandex</button>
-    </form>
+    <div>
+      {' '}
+      <form
+        action={async () => {
+          'use server';
+          await signIn('yandex');
+        }}
+      >
+        <button type="submit">Signin with Yandex</button>
+      </form>{' '}
+      <form
+        action={async () => {
+          'use server';
+          await signOut();
+        }}
+      >
+        <button type="submit">Sign Out</button>
+      </form>
+    </div>
   );
 }

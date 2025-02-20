@@ -4,8 +4,24 @@
   gap: 16px;
 }
 
-.userMenu__avatar {
+.avatar {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.link {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 12px;
+  height: 40px;
+  width: fit-content;
+  padding: 0 20px;
+  transition: all linear 0.2s;
+  color: var(--text-black);
+  background: var(--button-primary);
+}
+
+.link:hover {
+  background: var(--button-secondary);
 }

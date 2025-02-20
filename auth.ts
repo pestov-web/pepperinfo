@@ -1,19 +1,25 @@
 import NextAuth from 'next-auth';
-// import Nodemailer from 'next-auth/providers/nodemailer';
-import Yandex from 'next-auth/providers/yandex';
 import { PrismaAdapter } from '@auth/prisma-adapter';
-import { prisma } from '@/prisma';
+import { prisma } from './app/lib/prisma';
+import { authConfig } from '@/auth.config';
+import Yandex from 'next-auth/providers/yandex';
+// import { z } from 'zod';
+// import type { User } from '@/app/lib/definitions';
+// import bcrypt from 'bcrypt';
+
+// async function getUser(email: string): Promise<User | undefined> {
+//   try {
+//     const user = await sql<User[]>`SELECT * FROM users WHERE email=${email}`;
+//     return user[0];
+//   } catch (error) {
+//     console.error('Failed to fetch user:', error);
+//     throw new Error('Failed to fetch user.');
+//   }
+// }
 
 export const { handlers, auth, signIn, signOut } = NextAuth({
   adapter: PrismaAdapter(prisma),
-  providers: [
-    // Nodemailer({
-    //   server: process.env.EMAIL_SERVER,
-    //   from: process.env.EMAIL_FROM,
-    // }),
-    Yandex({
-      clientId: process.env.YANDEX_CLIENT_ID,
-      clientSecret: process.env.YANDEX_CLIENT_SECRET,
-    }),
-  ],
+  session: { strategy: 'jwt' },
+  ...authConfig,
+  providers: [Yandex],
 });

@@ -2,8 +2,11 @@ import styles from './header.module.css';
 import { navList } from '@/app/lib/data-placeholder';
 import UserMenu from '@/app/ui/user-menu';
 import Link from 'next/link';
+import { auth } from '@/auth';
+import Image from 'next/image';
 
-const Header = () => {
+const Header = async () => {
+  const session = await auth();
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -19,7 +22,17 @@ const Header = () => {
                 )
             )}
           </ul>
-          <UserMenu />
+          {session && session.user ? (
+            <Image
+              className={styles.avatar}
+              src={session.user.image || '/default-avatar.png'}
+              alt="User Avatar"
+              height={32}
+              width={32}
+            />
+          ) : (
+            <UserMenu />
+          )}
         </nav>
       </div>
     </header>
