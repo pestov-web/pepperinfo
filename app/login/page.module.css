@@ -1,5 +1,6 @@
 .container {
   border: 1px solid #f4f2f2;
+  border-radius: 15px;
   background-color: #f4f2f2;
   display: flex;
   flex-direction: column;

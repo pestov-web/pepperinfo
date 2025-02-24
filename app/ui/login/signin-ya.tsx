@@ -3,7 +3,6 @@ import { signIn, signOut } from '@/auth';
 export default function SignInYa() {
   return (
     <div>
-      {' '}
       <form
         action={async () => {
           'use server';
@@ -11,7 +10,7 @@ export default function SignInYa() {
         }}
       >
         <button type="submit">Signin with Yandex</button>
-      </form>{' '}
+      </form>
       <form
         action={async () => {
           'use server';

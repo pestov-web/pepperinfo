@@ -6,6 +6,7 @@
   --border: #e5e8eb;
   --text-black: #1c120d;
   --text-orange: #9c6e4a;
+  --input-bg: #f4ece7;
 }
 
 @media (prefers-color-scheme: dark) {

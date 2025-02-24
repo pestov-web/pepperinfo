@@ -20,6 +20,11 @@ const navList = [
   { id: 6, title: 'Контакты', path: '/contacts' },
 ];
 
+const footerSocials = [
+  { id: 1, title: 'Telegram', path: '#', icon: 'ri:telegram-line' },
+  { id: 2, title: 'Instagram', path: '#', icon: 'ri:instagram-line' },
+];
+
 const blogData = [
   {
     id: 1,
@@ -114,4 +119,4 @@ const recipesData = [
   },
 ];
 
-export { navList, blogData, databaseData, recipesData };
+export { navList, blogData, databaseData, recipesData, footerSocials };
